@@ -6,6 +6,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
   modules: ['@pinia/nuxt'],
+  runtimeConfig: {
+    jsonServerUrl: 'http://localhost:3001'
+  },
   components: [{ path: '~/components', pathPrefix: false }],
   css: ['~/assets/css/main.css'],
   app: {
@@ -25,5 +28,7 @@ export default defineNuxtConfig({
       },
     },
   },
+
+   
 
 })
